@@ -234,3 +234,68 @@ review.from("#cos3 ",{
   y:50,
   duration:0.7
 })
+// gsap.to(".home-shadow", {
+//   top: 0,
+//   duration: 2,
+//   scrollTrigger: {
+//     trigger: ".home-shadow",
+//     start: "top 80%", // adjust as needed
+//     toggleActions: "play none none reverse"
+//   }
+// });
+
+// gsap.from(".home-shadow h3", {
+//   opacity: 0,
+//   duration: 1,
+//   y: 50,
+//   scrollTrigger: {
+//     trigger: ".home-shadow h3",
+//     start: "top 90%",
+//     toggleActions: "play none none reverse"
+//   }
+// });
+
+// gsap.from(".home-shadow video", {
+//   opacity: 0,
+//   stagger: 0.2,
+//   duration: 1,
+//   scale: 1.2,
+//   scrollTrigger: {
+//     trigger: ".home-shadow video",
+//     start: "top 90%",
+//     toggleActions: "play none none reverse"
+//   }
+// });
+// gsap.from(".booking-heading h1 span", {
+//   opacity: 0,
+//   y: 50,
+//   duration: 0.7,
+//   stagger: 0.7,
+//   scrollTrigger: {
+//     trigger: ".booking-heading",
+//     start: "top 80%",
+//     toggleActions: "play none none reverse"
+//   }
+// });
+
+// gsap.from(".form-box", {
+//   opacity: 0,
+//   y: 50,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: ".form-box",
+//     start: "top 85%",
+//     toggleActions: "play none none reverse"
+//   }
+// });
+
+// gsap.from(".images img", {
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.2,
+//   scrollTrigger: {
+//     trigger: ".images",
+//     start: "top 85%",
+//     toggleActions: "play none none reverse"
+//   }
+// });

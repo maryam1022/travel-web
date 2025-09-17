@@ -13,7 +13,6 @@
 }
 html{
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
 }
@@ -44,10 +43,6 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    /* background-color: rgba(255, 255 , 255,.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
-    /* background-color: var(--PrimaryForestGreen); */
     color: black;
     box-shadow: 0 .5rem 1rem rgba(146, 135, 135, 0.1);
     z-index: 1000;
@@ -55,12 +50,7 @@ header{
 
 
 }
-header .nav-logo img {
-    height: 5rem;
-    width: 4rem;
-    padding-top: 2rem ;
- 
-}
+
 header .logo{
     font-size: 2.5rem;
     font-weight: bold;
@@ -74,7 +64,26 @@ header .logo span{
    background-color: var(--PrimaryForestGreen);
    color: white;
 }
-
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background-color: rgba(14, 223, 108, 0.2);
+    color: var(--PrimaryForestGreen);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+span{
+    background-color: rgba(14, 223, 108, 0.2);
+    color: var(--PrimaryForestGreen);
+     border-radius: .5rem;
+    padding: .2rem 1rem;
+ }
+  .space{
+    background: none ;
+}
 header .nav a{
     font-size: 2rem;
     padding: 0 1.5rem;
@@ -127,9 +136,7 @@ header .search-bar-container label:hover{
 }
 body{
     height: 200rem;
-}
-video{
-    width: 100%;
+    overflow-x: hidden;
 }
 
 .login-form-container{
@@ -319,29 +326,11 @@ header .nav i{
     justify-content: center;
     position: relative;
 }
-.book-h1{
-    padding: 250px;
-    text-align: center;
-    color: #000;
-    font-size: 4rem;
-}
- span{
-    display: inline-block;
-    background-color: rgba(14, 223, 108, 0.2);
-    color: var(--PrimaryForestGreen);
-    border-radius: .5rem;
-    padding: .2rem 1rem;
-}
-.book-h1 span.space{
-    background: none;
-}
-
-
 .form-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -150px;
+  margin-top: 150px;
   height: 40vh; 
   background: rgba(153, 143, 143, 0.2);
   width: 100%;
@@ -349,7 +338,10 @@ header .nav i{
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-
+.heading-book{
+    margin-top: 250px;
+    font-size: 3.5rem;
+}
 .form-box {
     margin-bottom: 250px;
   padding: 20px 30px;
@@ -403,14 +395,6 @@ header .nav i{
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-
-
-.package-h1{
-   padding: 100px;
-    text-align: center;
-    color: #000;
-    font-size: 4rem;
-}
 .package .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -495,12 +479,6 @@ header .nav i{
 
 .services .box-container .box:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
-}
-.services-h1{
-   padding: 100px;
-    text-align: center;
-    color: #000;
-    font-size: 4rem;
 }
 
 
@@ -662,6 +640,31 @@ body{
     header{
         padding: 2rem;
     }
+    .content{
+    margin-top: 140px;    
+    row-gap: 2rem;
+}
+
+.home-title{
+    padding-left: 220px ;
+    
+}
+
+.home-title-two{
+    padding-left: 320px ;
+}
+.home-description{
+    padding-left: 370px;
+}
+.btn-two{
+    padding-left: 200px;
+}
+.btn{
+    margin-top: 1rem;
+}
+
+
+
   }
   @media (max-width:778px){
 
@@ -707,4 +710,84 @@ header .nav.active{
         font-size: 50%;
     }
     
+}
+@media (max-width:360px) {
+  html{  font-size:40% ;
+  }
+   .content{
+    margin-top: 190px;    
+    row-gap: 1rem;
+}
+
+.home-title{
+    padding-left: 140px ;
+    font-size: 6rem;
+    
+}
+
+.home-title-two{
+    padding-left: 140px ;
+    font-size: 6rem;
+}
+.home-description{
+    padding-left: 150px;
+}
+.btn-two{
+    padding-left: 150px;
+}
+.video-container video{
+    margin-top: 250px;
+    margin-left: 30px;
+
+}
+.home-subtitle{
+    margin-top: 200px;
+    font-size: 6rem;
+}
+.heading-book{
+    margin-top: 30px;
+    font-size: 3rem;
+}
+.home{
+    min-height: 100vh;
+}
+span{font-size: 2rem;}
+.form-section {
+  
+  margin-top:50px;
+  height: 100px;
+}
+
+.form-box {
+  margin-bottom: 80px;
+  padding: 10px 20px;
+  
+}
+
+.inline-form {
+  gap: 5px; 
+  width: 330px;
+}
+
+
+.inline-form input,
+.inline-form button {
+  padding: 2px 1px;
+  height: 20px;
+  width: 30px;
+  font-size: 1rem;
+}
+
+.images {
+
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.images img {
+  height: 80px;
+  width: 80px;
+  margin-top: -30px;
+}
+
 }
